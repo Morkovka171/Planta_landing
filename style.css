@@ -238,9 +238,6 @@ input {
 .care__container {
    
 }
-.care__img{
-padding-bottom: 128px;
-}
 .care__img >img {
     border-radius: 0px 0px 250px 0px;
 }
@@ -291,4 +288,23 @@ padding-bottom: 128px;
     height: 56px;
     border-radius: 9999px;
     background: url('Images/Care/scan.svg') no-repeat;
+}
+.care__img_3 > img{
+    border-radius: 0px 305px 305px 0px;
+}
+.care__img_4 > img{
+    border-radius: 120px;
+}
+.care__img_4 {
+    position: relative;
+}
+.care__img_4::after {
+    position: absolute;
+    top: 56px;
+    left: -56px;
+    content: '';
+    width: 242px;
+    height: 56px;
+    border-radius: 9999px;
+    background: url('Images/Care/change.jpg') no-repeat;
 }
