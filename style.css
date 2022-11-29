@@ -139,7 +139,15 @@ input {
     border: 1px solid #D9E7CB;
     color: #D9E7CB;
 }
-
+@media (max-width: 450px) {
+    .header__body {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+}
 /*? -----MAIN-------------------------------- */
 
 .page__main {
