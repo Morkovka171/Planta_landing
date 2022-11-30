@@ -296,7 +296,12 @@ input {
     border-radius: 120px;
 }
 .care__img_4 {
+    
     position: relative;
+}
+.care__img_all{
+    display: flex;
+    justify-content: center;
 }
 .care__img_4::after {
     position: absolute;
@@ -308,3 +313,40 @@ input {
     border-radius: 9999px;
     background: url('Images/Care/change.jpg') no-repeat;
 }
+
+@media (max-width: 1100px) {
+    .care {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        /* justify-content: center;
+        align-items: center; */
+        padding-top: 50px;
+        gap: 50px;
+        padding-bottom: 70px;
+    }
+    .care__column-reverse{
+        display: flex;
+        flex-direction: column;
+    }
+    .care__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    }
+    @media (max-width: 620px) {
+        .care__img_all > img{
+            max-width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .care__img_4::after {
+            left: 60px;
+        }
+        .care {
+
+        }
+    }
